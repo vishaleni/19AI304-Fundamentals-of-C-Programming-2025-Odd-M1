@@ -26,7 +26,35 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main()
+{
+    // Integer literal
+    printf("Integer Literal: %d\n", 10);
+    printf("Size of Integer: %lu bytes\n\n", sizeof(10));
+
+    // Float literal
+    printf("Float Literal: %f\n", 3.14);
+    printf("Size of Float: %lu bytes\n\n", sizeof(3.14));
+
+    // Character literal
+    printf("Character Literal: %c\n", 'A');
+    printf("Size of Character: %lu bytes\n\n", sizeof('A'));
+
+    // String literal
+    printf("String Literal: %s\n", "Hello C");
+    printf("Size of String: %lu bytes\n", sizeof("Hello C"));
+
+    return 0;
+}
+```
+
 # Output:
+<img width="615" height="151" alt="image" src="https://github.com/user-attachments/assets/190ca564-2311-48ea-8ea1-4bbcee4917b8" />
+
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,8 +85,27 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+```
+#include <stdio.h>
+
+#define PI 3.14159
+
+int main()
+{
+    const int DAYS = 7;
+
+    printf("Value of PI = %.5f\n", PI);
+    printf("Value of DAYS = %d\n", DAYS);
+
+    return 0;
+}
+```
 # Output:
-# Result: 
+<img width="858" height="252" alt="image" src="https://github.com/user-attachments/assets/a4eb5522-265c-4ce2-a009-7ad56a3a4c3f" />
+
+
+# Result
+
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
 
@@ -81,8 +128,17 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+
+<img width="535" height="530" alt="image" src="https://github.com/user-attachments/assets/c79135ee-183a-432b-8df7-ca5bfc01c5be" />
+
+
 # Output:
-# Result: 
+<img width="1347" height="480" alt="image" src="https://github.com/user-attachments/assets/c1a2e190-c870-4229-9bc9-ed3ef6fa8c4e" />
+
+
+# Result:
+Thus, the program was implemented and executed successfully, and the required output was obtained.
+
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
 # IAPR-1- Module 1 - FoC
@@ -120,7 +176,27 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+scanf("%d %d", &a, &b);
+
+printf("Addition: %d\n", a + b);
+printf("Subtraction: %d\n", a - b);
+printf("Multiplication: %d\n", a * b);
+printf("Division: %d\n", a / b);
+printf("Remainder: %d\n", a % b);
+
+printf("Bitwise AND: %d\n", a & b);
+printf("Bitwise OR: %d\n", a | b);
+printf("Bitwise XOR: %d\n", a ^ b);
+printf("Left Shift (a << 1): %d\n", a << 1);
+printf("Right Shift (a >> 1): %d\n", a >> 1);
+printf("Bitwise NOT (~a): %d\n", ~a);
+
+return 0;
+
 # Output:
+<img width="1337" height="690" alt="image" src="https://github.com/user-attachments/assets/b612312b-0a9b-45d9-9d68-6768d217974b" />
+
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +241,20 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+(ch >= '0' && ch <= '9') ?
+    printf("Digit") :
+((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+    ((ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'||ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u') ?
+        printf("Vowel") :
+        printf("Consonant")) :
+    printf("Special Symbol");
+
+return 0;
+
 # Output:
+<img width="1037" height="465" alt="image" src="https://github.com/user-attachments/assets/4fc24891-a58b-4c3b-ab08-bffad28a9922" />
+
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
